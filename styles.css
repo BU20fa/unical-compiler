@@ -32,7 +32,7 @@ body {
     z-index: -1;
 
     position: relative;
-    top: 0;
+    top: 1;
 }
 
 .image{
