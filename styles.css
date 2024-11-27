@@ -1,0 +1,331 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: #d1dae6;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* min-width: 973px; */
+
+    transition: .9s;
+}
+
+.top{
+    width: 92%;
+    padding: 0% 4%;
+    height: 13vh;
+    background-color: rgba(255, 255, 255, 0.47);
+    margin-bottom: 30px;
+
+    transition: .7s;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    z-index: -1;
+
+    position: relative;
+    top: 0;
+}
+
+.image{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.105);
+}
+
+img{
+    height: 70%;
+    transition: .7s;
+}
+
+h1{
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 23pt;
+    color: #146ebe;
+    border-radius: 0 30px 10px 0;
+
+    padding: 0.5% 4% 0.5% 2%;
+
+    margin-bottom: 20px;
+    margin-left: -13px;
+    font-weight: bolder;
+
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.105);
+
+    transition: .7s;
+
+    z-index: -1;
+}
+
+.icon{
+    position: absolute;
+    right: 40px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.422);
+}
+
+.icon img{
+    height: 50%;
+}
+
+.container {
+    background-color: #ffffff78;
+    width: 78%;
+    height: auto;
+    border-radius: 60px;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+    padding: 2%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    transition: .7s;
+
+    overflow-x: auto;
+
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.091);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #146ebe;
+}
+
+h2{
+    width: 50%;
+    padding: 2% 2%;
+    background: #146ebe;
+    border-radius: 20px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23pt;
+    color: white;
+
+    margin-bottom: 20px;
+
+    transition: .7s;
+}
+
+form {
+    width: 92%;
+    height: auto;
+    padding: 2% 2%;
+    margin-bottom: 30px;
+    background-color: #d1dae6;
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: .7s;
+}
+
+label {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+input, select, button {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 0% 2%;
+    background-color: white;
+
+    margin-top: 25px;
+
+    transition: .7s;
+}
+
+input[type="number"],
+select[id="gender"],
+select[id="courses"]{
+    width: 90px;
+    padding: 0% 1%;
+}
+
+select[id="courses"],
+select[id="gender"]{
+    width: 180px;
+}
+
+input:hover,
+select:hover{
+    background-color: #dbe8f3;
+}
+
+button {
+    background-color: #163c5d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;  
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #225a8b;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 92%;
+    margin-top: 20px;
+    padding: 3% 2%;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: #ffffff78;
+    overflow-x: auto;
+
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.091);
+}
+
+.hidden {
+    display: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    text-transform: uppercase;
+}
+
+
+.bottom{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:414px) {
+    h1{
+        width: 170px;
+        height: 50px;
+        font-size: 15pt;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    h2{
+        width: auto;
+        font-size: 15pt;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        border-radius: 10px;
+    }
+
+    .image{
+        width: 70px;
+        height: 70px;
+        margin-top: -10px;
+    }
+
+    .icon{
+        right: 10px;
+    }
+    
+    .container{
+        width: 350px;
+        padding-bottom: 10%;
+    }    
+
+    form {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input, select, button {
+        height: 40px;
+        width: 270px;
+        border-radius: 10px;
+        border: none;
+        padding: 0% 2%;
+        background-color: white;
+    
+        margin-top: 0px;
+    
+        transition: .7s;
+    }
+
+    #courses, #gender{
+        width: 280px;
+        padding: 0% 2%;
+    }
+
+    input[type="number"]{
+        width: 200px;
+        padding: 0% 2%;
+    }
+
+    label,button{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #163c5d;
+        /* width: auto; */
+    }
+}
